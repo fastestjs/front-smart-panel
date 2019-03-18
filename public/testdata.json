@@ -1,0 +1,13 @@
+      
+{
+    
+  "name":"主域名1",
+    "test1":{
+        "name":"fastest.now.qq.com",
+        "id":1
+    },
+    "test2":{
+        "name":"fastest.huayang.qq.com",
+        "id":2
+    }
+}

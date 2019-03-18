@@ -2,9 +2,10 @@
   "name": "front-smart-panel",
   "version": "0.1.0",
   "description": "Front smart panel for fastest",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,40 @@
   "bugs": {
     "url": "https://github.com/fastestjs/front-smart-panel/issues"
   },
-  "homepage": "https://github.com/fastestjs/front-smart-panel#readme"
+  "homepage": "https://github.com/fastestjs/front-smart-panel#readme",
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "ant-design-pro": "^2.1.1",
+    "antd": "^3.6.2",
+    "antd-mobile": "^2.2.9",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "github-markdown-css": "^2.10.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.10",
+    "lodash-decorators": "^6.0.1",
+    "mockstar-client": "^1.0.0",
+    "mysql": "^2.16.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "reflect-metadata": "^0.1.12",
+    "superagent": "^3.8.3",
+    "typeorm": "^0.2.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.7.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "react-app-rewire-less": "^2.1.1",
+    "react-app-rewired": "^1.5.2"
+  }
 }
