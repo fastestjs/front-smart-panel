@@ -11,7 +11,13 @@ var app = new Vue({
 
             // 向该窗口发送消息
             // iframeWin.postMessage('hello, world!', 'http://moweide.gitcafe.io');
-            iframeWin.postMessage('hello, world!','http://localhost:3000');
+            iframeWin.postMessage({
+                envList: [
+                    { value: 0, label: '测试环境1' },
+                    { value: 1, label: '测试环境2' },
+                    { value: 2, label: '测试环境x' }
+                ]
+            }, 'http://localhost:3000');
         }
     },
     created() {
