@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父级页面</title>
+    <script src="./js/vue.2.5.17.js"></script>
+
+</head>
+<body>
+<h1>这是父级页面</h1>
+<div id="app" class="container">
+    <textarea :value="msgList"></textarea>
+
+    <button @click="handleClick">点击我获取信息</button>
+</div>
+
+<script src="./js/parent.js"></script>
+
+<style>
+    #fastest_front_smart_panel {
+        position: relative;
+    }
+</style>
+<div id="fastest_front_smart_panel">
+    <iframe id="otherPage" src="http://localhost:3000/#/" frameborder="0"></iframe>
+</div>
+
+</body>
+</html>

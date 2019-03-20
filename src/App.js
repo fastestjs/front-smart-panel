@@ -11,6 +11,15 @@ import './App.less';
 export default class App extends Component {
     componentDidMount() {
         // this.props.dispatch(loadAll());
+        window.addEventListener('message', function (event) {
+            // 监听父窗口发送过来的数据向服务器发送post请求
+            console.log('--iframe-- event', event);
+
+            window.parent.postMessage({
+                from: 'iframe',
+                originalData: event.data
+            }, '*');
+        }, false);
     }
 
     render() {
